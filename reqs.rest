@@ -1,0 +1,33 @@
+GET http://localhost:5000/
+
+
+###
+
+POST http://localhost:5000/add
+Content-Type: application/json
+
+{
+    "title": "cvb",
+    "author": "qqwerqwqerq",
+    "genre": "qqweqrwqerq",
+    "publication_date": "2002-03-1",
+    "description": "weqrwe"
+}
+
+###
+
+DELETE http://localhost:5000/delete/f2ff139c-0cc6-482b-88a0-36ba46057d12
+
+
+###
+
+PUT http://localhost:5000/edit/3937227b-3f0c-4db7-a206-b899e848c430
+Content-Type: application/json
+
+{
+    "title": "qqq",
+    "author": "qqq",
+    "genre": "qqq",
+    "publication_date": "2002-03-1",
+    "description": "qqq"
+}
