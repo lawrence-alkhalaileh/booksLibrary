@@ -48,6 +48,7 @@ router.post("/add", async (req, res) => {
 router.put("/edit/:id", async (req, res) => {
   const { id } = req.params;
   const { title, author, genre, publication_date, description } = req.body;
+  console.log(req.body);
 
   try {
     const check = await pool.query("SELECT id FROM books WHERE id = $1", [id]);
